@@ -1,0 +1,66 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+  background-color: #ccc;
+}
+.porcentagem{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  font-size: 20px;
+}
+.metarealizado{
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.progress{
+  width: 400px;
+  height: 22px;
+  background-color: #aaa;
+  box-shadow: 1px 1px 4px black;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+}
+.meta-diaria .progress--fill{
+  width: 8.77%;
+  height: 100%;
+  background-color: #ff6961;
+}
+.progress--text{
+  position:absolute;
+  top: 13%;
+  right: 45%;
+  left: 45%;
+  background-color: transparent;
+}
+.meta-acumulada .progress--fill{
+  width: 48.43%;
+  height: 100%;
+  background-color: #ff6961;
+}
+.meta-mensal .progress--fill{
+  width: 18.79%;
+  height: 100%;
+  background-color: #ff6961;
+}
+.metarealizado-meta, .metarealizado-realizado{
+  color: #666464;
+}
+
+
+
+
+.teste{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
