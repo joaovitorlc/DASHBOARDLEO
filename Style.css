@@ -1,9 +1,9 @@
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family:sans-serif;
   background-color: #ccc;
+  box-sizing: border-box;
 }
 .porcentagem{
   display: flex;
@@ -59,8 +59,129 @@
 
 
 
-.teste{
-  width: 100px;
-  height: 100px;
+
+
+
+
+
+.metafiado{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+.metafiado-fiado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  border: 15px solid white;
+}
+.metafiado-fiado-tabela{
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.spanmetafiado{
+  background-color: #aaa;
+  font-weight: bold;
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+  padding: 13px 0px;
+}
+.metafiado-fiado-tabelatd{
   background-color: white;
+  padding: 8px;
+  border: 0.1px solid #666464;
+  font-weight: bold;
+  color: #666464;
+  text-align: right;
+  font-size: 14px;
+}
+.metafiado-fiado-tabelath {
+  padding: 8px;
+  border: 0.1px solid #666464;
+  background-color: #ccc;
+  font-size: 14px;
+}
+.metafiado-meta-titulo{
+  font-size: 20px;
+}
+.metafiado-meta-tabela, .metafiado-meta-tabela th, .metafiado-meta-tabela td{
+  border: 1px solid #666464;
+  background-color: white;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: left;
+}
+.metafiado-meta-tabela{
+  margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projecao{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+.projecao-projecaotitulo{
+  font-size: 20px;
+}
+.projecao-projecaotabela, .projecao-projecaotabela th, .projecao-projecaotabela td{
+  border: 1px solid #666464;
+  background-color: white;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: left;
+}
+.projecao-projecaotabela{
+  margin-top: 7px;
+}
+
+
+hr{
+  margin: 50px;
+  background-color: #aaa;
+  height: 3px;
+}
+
+
+.classificacao{
+  margin-left: 50px;
+}
+.classificacao-emotions{
+  display: flex;
+}
+.classificacao-emotions div{
+  width: 85px;
+  height: 10px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 15px;
+}
+.classificacao-emotions div img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
 }
