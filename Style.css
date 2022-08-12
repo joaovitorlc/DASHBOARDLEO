@@ -197,6 +197,7 @@ hr{
 
 .classificacao{
   margin: 0px 50px;
+  margin-bottom: 100px;
 }
 .classificacao-emotions{
   display: flex;
@@ -240,6 +241,7 @@ img{
 .tabelafinal th{
   background-color: #aaa;
 }
+
 
 
 
