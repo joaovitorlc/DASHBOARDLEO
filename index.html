@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="/Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">  
 </head>
 <body>
 
   <section class="porcentagem">
-
-
 
     <div class="meta-diaria">
       Meta Diária
@@ -70,11 +71,11 @@
 
 
   <section class="metafiado">
-    <div class="metafiado-fiado">
-      <span class="spanmetafiado">
+    <div class="metafiado-fiado" style="max-width: 600px;">
+      <span class="spanmetafiado" style="max-width: 600px;">
         Meta fiado: R$ 228.407,26 (28%)
       </span>
-      <table style="width: 500px;" class="metafiado-fiado-tabela">
+      <table class="metafiado-fiado-tabela" style="max-width: 600px;">
         <tr>
           <th class="metafiado-fiado-tabelath">Período</th>
           <th class="metafiado-fiado-tabelath">Total</th>
@@ -97,11 +98,11 @@
       </table>
     </div>
 
-    <div class="metafiado-meta">
-      <span class="metafiado-meta-titulo">
+    <div class="metafiado-metasprimeiro">
+      <span class="metafiado-metasprimeiro-titulo">
         Para bater a meta:
       </span>
-      <table style="width: 700px;" class="metafiado-meta-tabela">
+      <table class="metafiado-metasprimeiro-tabela">
         <tr>
           <th>Falta ainda</th>
           <th>R$ 208.658,00</th>
@@ -127,7 +128,7 @@
       <span class="metafiado-meta-titulo">
         Projeção:
       </span>
-      <table style="width: 650px;" class="metafiado-meta-tabela">
+      <table class="metafiado-meta-tabela">
         <tr>
           <th>Meta do mês</th>
           <th>R$ 742.000,00</th>
@@ -143,11 +144,11 @@
       </table>
     </div>
 
-    <div class="metafiado-meta">
+    <div class="metafiado-meta"   style="max-width: 660px;" > 
       <span class="metafiado-meta-titulo">
         Meta de clientes:
       </span>
-      <table style="width: 700px;" class="metafiado-meta-tabela">
+      <table class="metafiado-meta-tabela">
         <tr>
           <th>Meta de clientes</th>
           <th>98 clientes</th>
@@ -172,7 +173,7 @@
       <span class="projecao-projecaotitulo">
         Vendas:
       </span>
-      <table style="width: 720px;" class="projecao-projecaotabela">
+      <table class="projecao-projecaotabela">
         <tr>
           <th>Abril 2021</th>
           <th>Abril 2022</th>
@@ -203,34 +204,99 @@
     </span>
     <br>  
     <br>  
-    <div class="classificacao-emotions">
+  <div class="classificacao-emotions"  >
       <div>
         <img src="/img/iconfeliz.png" alt="">
         (80)
       </div>
 
-      <div>
+      <div style="background-color: orange;">
         <img src="/img/iconneutro.png" alt="">
         (12)
       </div>
 
-      <div>
+      <div style="background-color: red;">
         <img src="/img/icontriste.png" alt="">
         (22)
       </div>
 
-      <div>
-        <img src="/img/iconpolegarparabaixo.png" alt="">
+      <div style="background-color: #808080;">
+        <img src="/img/iconpolegarparabaixo.png" alt="" style="border-radius: 0px;">
         (10)
       </div>
 
-      <div>
-        <img src="/img/iconpolegarparacima.png" alt="" style="border-radius: 0px;" style="background-color: ;green">
+      <div style="background-color: blue;">
+        <img src="/img/iconpolegarparacima.png" alt="" style="border-radius: 0px;">
         (50)
       </div>
     </div>
 
     <br><br><br>
+
+    <table class="tabelafinal" style="width: 100%; margin-bottom: 100px;">
+      <tr>
+        <th>UF</th>
+        <th>Cidade</th>
+        <th>CNPJ/CPF</th>
+        <th>Cliente</th>
+        <th>Telefone</th>
+        <th>Aberto</th>
+        <th>Vencido</th>
+        <th>Limite</th>
+        <th>Limite Disponível</th>
+        <th>Última Compra</th>
+      </tr>
+      <tr>
+        <td>PR</td>
+        <td>MARINGÁ</td>
+        <td>11578715948</td>
+        <td>JOÃO VITOR LIMA CAETANO</td>
+        <td>(44)99904-2682</td>
+        <td>R$ 0,00</td>
+        <td>R$ 0,00</td>
+        <td>R$ 15.000,00</td>
+        <td>R$ 5.000</td>
+        <td>11/08/2022</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+
 
   </section>
   

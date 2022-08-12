@@ -1,14 +1,15 @@
 *{
   padding: 0;
   margin: 0;
-  font-family:sans-serif;
+  font-family: 'Roboto', sans-serif;
+
   background-color: #ccc;
   box-sizing: border-box;
 }
 .porcentagem{
   display: flex;
   justify-content: space-between;
-  margin: 50px;
+  margin: 50px 0px;
   font-size: 20px;
 }
 .metarealizado{
@@ -17,8 +18,11 @@
   display: flex;
   justify-content: space-between;
 }
+.meta-diaria, .meta-acumulada, .meta-mensal{
+  flex: 1;
+  margin: 0px 50px;
+}
 .progress{
-  width: 400px;
   height: 22px;
   background-color: #aaa;
   box-shadow: 1px 1px 4px black;
@@ -55,7 +59,9 @@
 .metarealizado-meta, .metarealizado-realizado{
   color: #666464;
 }
-
+.metarealizado-realizado{
+  text-align: right;
+}
 
 
 
@@ -67,24 +73,23 @@
 .metafiado{
   display: flex;
   justify-content: space-between;
-  margin: 0px 50px;
 }
 .metafiado-fiado{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
+  flex: 1;
   border: 15px solid white;
+  margin: 0px 50px;
 }
 .metafiado-fiado-tabela{
   border-collapse: collapse;
-  font-size: 12px;
 }
 .spanmetafiado{
   background-color: #aaa;
   font-weight: bold;
   font-size: 20px;
-  width: 500px;
+  flex:1;
   text-align: center;
   padding: 13px 0px;
 }
@@ -95,13 +100,48 @@
   font-weight: bold;
   color: #666464;
   text-align: right;
-  font-size: 14px;
+  font-size: 13px;
 }
 .metafiado-fiado-tabelath {
   padding: 8px;
   border: 0.1px solid #666464;
   background-color: #ccc;
   font-size: 14px;
+}
+.metafiado-metasprimeiro{
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 660px;
+}
+.metafiado-metasprimeiro-titulo{
+  font-size: 20px;
+}
+.metafiado-metasprimeiro-tabela, .metafiado-metasprimeiro-tabela th, .metafiado-metasprimeiro-tabela td{
+  border: 1px solid #666464;
+  background-color: white;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: left;
+}
+.metafiado-metasprimeiro-tabela{
+  margin-top: 7px;
+}
+
+
+
+
+
+
+.metafiado-meta{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  margin: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .metafiado-meta-titulo{
   font-size: 20px;
@@ -115,19 +155,8 @@
 }
 .metafiado-meta-tabela{
   margin-top: 7px;
+  width: 100%;  
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -135,10 +164,11 @@
 
 .projecao{
   display: flex;
-  justify-content: space-between;
-  margin: 0px 50px;
 }
-
+.projecao-projecao{
+  margin: 0px 50px;
+  width: 100%;
+}
 .projecao-projecaotitulo{
   font-size: 20px;
 }
@@ -151,6 +181,7 @@
 }
 .projecao-projecaotabela{
   margin-top: 7px;
+  width: 100%;
 }
 
 
@@ -162,7 +193,7 @@ hr{
 
 
 .classificacao{
-  margin-left: 50px;
+  margin: 0px 50px;
 }
 .classificacao-emotions{
   display: flex;
@@ -178,10 +209,95 @@ hr{
   border-radius: 5px;
   color: white;
   margin-right: 15px;
+  cursor: pointer;
 }
+.classificacao-emotions div::backdrop{
+  
+}
+
 .classificacao-emotions div img{
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+img{
+  background-color: transparent;
+}
+
+
+.tabelafinal, .tabelafinal td, .tabelafinal th, .tabelafinal tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
+.tabelafinal td, .tabelafinal th{
+  height: 35px;
+  padding: 7px;
+  font-size: 15px;
+}
+.tabelafinal th{
+  background-color: #aaa;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .meta-diaria{
+    font-size: 17px;
+  }
+  .meta-acumulada{
+    font-size: 17px;
+  }
+  .meta-mensal{
+    font-size: 17px;
+  }
+  .metarealizado-meta{
+    font-size: 10px;
+  }
+  .metarealizado-realizado{
+    font-size: 10px;
+  }
+  .spanmetafiado{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .metafiado-metasprimeiro-titulo{
+    margin-top: 20px;
+  }
+  .metafiado-fiado-tabelatd{
+    font-size: 15px;
+  }
+  .metafiado-meta-tabela tbody{
+    height: 200px;
+  }
+  .metafiado-metasprimeiro-tabela th{
+    padding: 10px;
+    font-size: 15px;
+  }
+  .metafiado-metasprimeiro-tabela td{
+    font-size: 12px;
+    padding: 10px;
+  }
+  th, td{
+    padding: 10px;
+  }
+  .metafiado-meta-tabela th, .metafiado-meta-tabela td{
+    padding: 10px;
+    font-size: 15px;
+  }
+  .projecao-projecaotabela th, .projecao-projecaotabela td{
+    padding: 12px;
+  }
+  .classificacao-emotions div{
+    width: 65px;
+    padding: 15px;
+  }
+  .tabelafinal th, .tabelafinal td{
+    font-size: 10px;
+  }
 }
