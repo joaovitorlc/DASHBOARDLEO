@@ -73,6 +73,7 @@
 .metafiado{
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .metafiado-fiado{
   display: flex;
@@ -114,6 +115,7 @@
   flex-direction: column;
   flex: 1;
   max-width: 660px;
+  padding-top: 20px;
 }
 .metafiado-metasprimeiro-titulo{
   font-size: 20px;
@@ -164,6 +166,7 @@
 
 .projecao{
   display: flex;
+  margin-top: 40px;
 }
 .projecao-projecao{
   margin: 0px 50px;
@@ -210,9 +213,6 @@ hr{
   color: white;
   margin-right: 15px;
   cursor: pointer;
-}
-.classificacao-emotions div::backdrop{
-  
 }
 
 .classificacao-emotions div img{
@@ -299,5 +299,45 @@ img{
   }
   .tabelafinal th, .tabelafinal td{
     font-size: 10px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .porcentagem{
+    flex-direction: column;
+  }
+  .meta-diaria{
+    margin-bottom: 15px;
+  }
+  .meta-acumulada{
+    margin-bottom: 15px;
+  }
+  .metafiado{
+    flex-direction: column;
+  }
+  .projecao{
+    flex-direction: column;
+    margin: 0px 50px;
+  }
+  .metafiado-meta{
+    margin: 0px;
+  }
+  .projecao-projecao{
+    margin: 0px;
+    margin-top: 40px;
+  }
+  .metafiado-meta{
+    width: 100%;
+  }
+  .metafiado-meta-titulo{
+    margin-top: 40px;
+  }
+  .projecao-projecaotitulo{
+    margin-top: 40px;
+  }
+  .minhatabelascroll{
+    overflow-x: auto;
+    margin-bottom: 70px;
   }
 }
