@@ -354,6 +354,9 @@ img{
 
 @media (max-width: 450px) {
   .metafiado-fiado-tabela{
-    
+    font-size: 10px;
+  }
+  .metafiado-fiado-tabela th, .metafiado-fiado-tabela td{
+    font-size: 10px;
   }
 }
